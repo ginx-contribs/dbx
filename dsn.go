@@ -2,10 +2,10 @@ package dbx
 
 import (
 	"fmt"
+	_ "github.com/glebarez/go-sqlite"
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/jackc/pgx/v5"
 	_ "github.com/microsoft/go-mssqldb"
-	_ "modernc.org/sqlite"
 
 	"net/netip"
 )
@@ -13,7 +13,7 @@ import (
 const (
 	Mysql     = "mysql"
 	Postgres  = "postgres"
-	Sqlite    = "sqlite3"
+	Sqlite    = "sqlite"
 	Sqlserver = "sqlserver"
 )
 
